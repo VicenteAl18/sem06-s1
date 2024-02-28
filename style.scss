@@ -1,0 +1,51 @@
+@import 'footer.scss';
+*,
+::before,
+::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 20px;
+    background-image: url(https://images.unsplash.com/photo-1545486332-9e0999c535b2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D);
+    font-family: Arial, Helvetica, sans-serif;
+}
+// variables
+// ANIDAMIENTO  = etiquetas
+// NESTING (&)  = cuando nombramos clases
+//MODULARIDAD   = separa en pequeños trozos los estilos por bloques de un componente
+$first-color: red;
+$secund-color: yellow;
+$third-color: white;
+$xxl:100px;
+$xl:50px;
+h1{
+    text-align: center;
+    color: $first-color;
+    text-decoration: underline;
+}
+h2{
+    color: $secund-color;
+    font-size: 30px;
+    padding: 20px;
+    text-decoration: underline;
+}
+p{
+    color: $third-color;
+    font-size: 30px;
+    padding: 30px;
+    text-align: justify;
+}
+span{
+    color: aqua;
+    font-style: italic;
+}
+h3{
+    color: red;
+    font-size: 30px;
+    padding-left: 50px;
+}
+
+
+
