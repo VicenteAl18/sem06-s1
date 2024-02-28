@@ -30,19 +30,40 @@
     </div>
     <div>
         <h3>♦ Variables:</h3>
-        <p></p>
+        <p>Para un desarrollo ordenado y rápido en el archivo .sccs se crea variables con el simbolo ($), con estas se puede crear varibales de colores, tamaños, efectos, entre otros
+             <span>Por ejemplo: En esta vista tenemos variables de colores como: $first-color: red; $secund-color: yellow; $third-color: white. Tambien de tamaños 
+                $xxl:100px; $xl:50px.</span>
+        </p>
     </div>
     <div>
-        <h3>♦ Anidamiento:</h3>
-        <p></p>
+        <h3>♦ Anidamiento: </h3>
+        <p>Para dar a estilos a varias etiquetas de una sección dento de la etiqueta su pone  + y otra etiqueta con los elementos que se desea dar al CSS.
+             <span>Ejemplo: Aquí estamos anidando <br>
+                h3 { <br>
+                color: $first-color; <br>
+                font-size: 30px; <br>
+                padding-left: 50px; <br>
+                
+                + p{ <br>
+                    color: $third-color; <br>
+                span{ <br>
+                    color: $fourth-color;<br>
+                } <br>
+                } <br>
+                }</span>
+        </p>
     </div>
     <div>
-        <h3>♦ Nesting:</h3>
-        <p></p>
+        <h3 class="title">♦ Nesting:</h3>
+        <p class="fath">Cuando nombramos clases para dar estilos a la relación padre e hijo de las clases normalmente se hace .padre-hijo. En SASS para hace que el anidamiento sea corto se usa el simbolo (&) quedando &-hijo.
+        </p>
+        <span class="son"> Ejemplo: Se realizo el Nesting de las clases</span>
     </div>    
     <div>
         <h3>♦ Modularidad:</h3>
-        <p></p>
+        <p>Separa CSS en pequeños trozos los estilos por bloques de un componente esto quiere decir que se creará archivos parciales los cuales despues se deben importar en .scss 
+            <span>Ejemplo: Aqui se creó un archivo parcial _footer.scss y se importo a style.scss. El resultaso esta en el Footer.</span>
+        </p>
     </div>
     <footer>Derechos reservados &reg || Archivo parcial importado a style.css</footer>
 </body>

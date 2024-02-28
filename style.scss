@@ -18,6 +18,7 @@ body{
 $first-color: red;
 $secund-color: yellow;
 $third-color: white;
+$fourth-color: aqua;
 $xxl:100px;
 $xl:50px;
 h1{
@@ -37,14 +38,28 @@ p{
     padding: 30px;
     text-align: justify;
 }
-span{
-    color: aqua;
-    font-style: italic;
-}
-h3{
-    color: red;
+h3 {
+    color: $first-color;
     font-size: 30px;
     padding-left: 50px;
+    
+    + p{
+        color: $third-color;
+    span{
+        color: $fourth-color;
+    }
+    }
+}
+
+.title{
+    color: $secund-color;
+    &-fath{
+        color: $fourth-color;
+        font-size: 100px;
+        &-son{
+        color: $third-color;
+        }
+    }
 }
 
 
